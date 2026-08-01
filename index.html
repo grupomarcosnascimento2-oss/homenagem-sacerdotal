@@ -186,6 +186,40 @@
  color: var(--secondary);
  }
 
+ /* Card destacado sobre fundo escuro (tipos de livro) */
+.livro-tipo-card {
+ background: rgba(255,255,255,0.07);
+ border: 1px solid rgba(197,160,89,0.35);
+ border-radius: 14px;
+ padding: 28px 22px;
+ text-align: center;
+ transition: transform 0.25s ease, background 0.25s ease;
+ }
+
+.livro-tipo-card:hover {
+ transform: translateY(-5px);
+ background: rgba(255,255,255,0.12);
+ }
+
+.livro-tipo-card h3 {
+ font-size: 2.2rem;
+ margin-bottom: 10px;
+ }
+
+.livro-tipo-card .livro-tipo-titulo {
+ font-weight: bold;
+ color: var(--secondary);
+ margin-bottom: 8px;
+ font-size: 1rem;
+ }
+
+.livro-tipo-card p.livro-tipo-desc {
+ font-size: 0.88rem;
+ color: #C9D2E0;
+ line-height: 1.5;
+ margin: 0;
+ }
+
  /* Linha do Tempo */
 .timeline {
  display: flex;
@@ -255,35 +289,35 @@
  <h2>Um livro sob medida para cada sacerdote</h2>
  <p style="max-width: 800px; margin: 10px auto 0 auto;">Oferecemos diferentes formatos de obra, com propósitos distintos, mas igualmente capazes de eternizar o legado espiritual do sacerdote.</p>
  <div class="dados-grid">
- <div class="dado-item">
- <h3 style="font-size: 2.2rem;">📜</h3>
- <p style="font-weight: bold; margin-bottom: 6px;">Livro de Homenagem</p>
- <p style="font-size: 0.9rem; color: #C9D2E0;">Registra a trajetória, a vocação e os testemunhos da comunidade sobre a vida e o ministério do sacerdote.</p>
+ <div class="livro-tipo-card">
+ <h3>📜</h3>
+ <p class="livro-tipo-titulo">Livro de Homenagem</p>
+ <p class="livro-tipo-desc">Registra a trajetória, a vocação e os testemunhos da comunidade sobre a vida e o ministério do sacerdote.</p>
  </div>
- <div class="dado-item">
- <h3 style="font-size: 2.2rem;">📚</h3>
- <p style="font-weight: bold; margin-bottom: 6px;">Estudo Doutrinário</p>
- <p style="font-size: 0.9rem; color: #C9D2E0;">Reúne ensinamentos, reflexões teológicas e catequéticas do padre, com foco na doutrina em vez de sua história pessoal.</p>
+ <div class="livro-tipo-card">
+ <h3>📚</h3>
+ <p class="livro-tipo-titulo">Estudo Doutrinário</p>
+ <p class="livro-tipo-desc">Reúne ensinamentos, reflexões teológicas e catequéticas do padre, com foco na doutrina em vez de sua história pessoal.</p>
  </div>
- <div class="dado-item">
- <h3 style="font-size: 2.2rem;">🙏</h3>
- <p style="font-weight: bold; margin-bottom: 6px;">Testemunho de Fé e Espiritualidade</p>
- <p style="font-size: 0.9rem; color: #C9D2E0;">Compartilha reflexões espirituais e experiências de fé do sacerdote, preservando sua privacidade pessoal.</p>
+ <div class="livro-tipo-card">
+ <h3>🙏</h3>
+ <p class="livro-tipo-titulo">Testemunho de Fé e Espiritualidade</p>
+ <p class="livro-tipo-desc">Compartilha reflexões espirituais e experiências de fé do sacerdote, preservando sua privacidade pessoal.</p>
  </div>
- <div class="dado-item">
- <h3 style="font-size: 2.2rem;">🕊️</h3>
- <p style="font-weight: bold; margin-bottom: 6px;">Devocional</p>
- <p style="font-size: 0.9rem; color: #C9D2E0;">Reúne orações, meditações diárias e mensagens inspiradas na espiritualidade do padre, para fortalecer a fé dos fiéis.</p>
+ <div class="livro-tipo-card">
+ <h3>🕊️</h3>
+ <p class="livro-tipo-titulo">Devocional</p>
+ <p class="livro-tipo-desc">Reúne orações, meditações diárias e mensagens inspiradas na espiritualidade do padre, para fortalecer a fé dos fiéis.</p>
  </div>
- <div class="dado-item">
- <h3 style="font-size: 2.2rem;">🎙️</h3>
- <p style="font-weight: bold; margin-bottom: 6px;">Coletânea de Homilias e Reflexões</p>
- <p style="font-size: 0.9rem; color: #C9D2E0;">Reúne as próprias palavras do padre — homilias, reflexões dominicais e pregações marcantes — dando voz a ele mesmo, sem expor sua vida pessoal.</p>
+ <div class="livro-tipo-card">
+ <h3>🎙️</h3>
+ <p class="livro-tipo-titulo">Coletânea de Homilias e Reflexões</p>
+ <p class="livro-tipo-desc">Reúne as próprias palavras do padre — homilias, reflexões dominicais e pregações marcantes — dando voz a ele mesmo, sem expor sua vida pessoal.</p>
  </div>
- <div class="dado-item">
- <h3 style="font-size: 2.2rem;">🎉</h3>
- <p style="font-weight: bold; margin-bottom: 6px;">Álbum Comemorativo de Jubileu</p>
- <p style="font-size: 0.9rem; color: #C9D2E0;">Celebra datas especiais, como bodas de ordenação, através de fotos e registros dos marcos mais importantes do ministério sacerdotal.</p>
+ <div class="livro-tipo-card">
+ <h3>🎉</h3>
+ <p class="livro-tipo-titulo">Álbum Comemorativo de Jubileu</p>
+ <p class="livro-tipo-desc">Celebra datas especiais, como bodas de ordenação, através de fotos e registros dos marcos mais importantes do ministério sacerdotal.</p>
  </div>
  </div>
  </div>
